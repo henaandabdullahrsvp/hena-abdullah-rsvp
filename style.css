@@ -9,12 +9,9 @@
 :root {
   --cream: #EDE3D1;
   --cream-shadow: #DDD0B8;
-
   --white: #ffffff;
-
   --gold: #B08D57;
   --gold-dark: #8F6E3F;
-
   --soft-border: #d9cdbb;
 }
 
@@ -63,25 +60,19 @@ body {
 
 .hero {
   position: relative;
-
   min-height: 100vh;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   padding: 40px 20px;
-
   text-align: center;
   color: var(--gold);
 }
 
 .subtitle {
   margin-bottom: 20px;
-
   color: var(--gold);
-
   font-size: 0.7rem;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -89,9 +80,7 @@ body {
 
 h1 {
   color: var(--gold);
-
   font-family: "Cormorant Garamond", serif;
-
   font-size: clamp(4rem, 10vw, 7rem);
   font-weight: 400;
   line-height: 0.9;
@@ -99,27 +88,18 @@ h1 {
 
 h1 span {
   display: block;
-
   margin: 15px 0;
-
   color: var(--white);
-
   font-size: 0.5em;
   font-style: italic;
-
-  text-shadow:
-    0 1px 2px rgba(176, 141, 87, 0.55);
+  text-shadow: 0 1px 2px rgba(176, 141, 87, 0.55);
 }
 
 .announcement {
   max-width: 500px;
-
   margin-top: 30px;
-
   color: var(--gold);
-
   font-family: "Cormorant Garamond", serif;
-
   font-size: 1.35rem;
   font-style: italic;
 }
@@ -127,18 +107,13 @@ h1 span {
 .divider {
   width: 70px;
   height: 1px;
-
   margin: 35px 0;
-
   background: var(--white);
-
-  box-shadow:
-    0 1px 2px rgba(176, 141, 87, 0.55);
+  box-shadow: 0 1px 2px rgba(176, 141, 87, 0.55);
 }
 
 .event-details {
   color: var(--gold);
-
   line-height: 2;
   letter-spacing: 1px;
 }
@@ -156,7 +131,6 @@ h1 span {
 
 .location {
   color: var(--gold);
-
   font-size: 0.9rem;
   line-height: 1.6;
 }
@@ -169,60 +143,42 @@ h1 span {
 .landing-monogram {
   width: min(70vw, 390px);
   height: auto;
-
   margin-bottom: 5px;
-
   filter:
     brightness(0)
     invert(1)
-    drop-shadow(
-      0 2px 2px rgba(176, 141, 87, 0.6)
-    );
+    drop-shadow(0 2px 2px rgba(176, 141, 87, 0.6));
 }
 
 .hero-monogram {
   width: 130px;
   height: auto;
-
   margin-bottom: 25px;
-
   filter:
     brightness(0)
     invert(1)
-    drop-shadow(
-      0 2px 2px rgba(176, 141, 87, 0.6)
-    );
+    drop-shadow(0 2px 2px rgba(176, 141, 87, 0.6));
 }
 
 
 /* ===================================
    MAIN RSVP BUTTON
-   WHITE BACKGROUND + GOLD TEXT
 =================================== */
 
 .rsvp-button {
   display: inline-block;
-
   margin-top: 40px;
   padding: 14px 42px;
-
   background: #ffffff;
-
   border: 1px solid var(--gold);
-
   color: var(--gold);
-
   text-decoration: none;
   text-transform: uppercase;
-
   letter-spacing: 3px;
   font-size: 0.75rem;
-
   text-shadow: none;
   box-shadow: none;
-
   cursor: pointer;
-
   transition: 0.3s ease;
 }
 
@@ -243,19 +199,13 @@ body.invitation-locked {
 
 .welcome-screen {
   position: fixed;
-
   inset: 0;
-
   z-index: 9999;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   min-height: 100vh;
-
   text-align: center;
-
   transition:
     opacity 0.8s ease,
     visibility 0.8s ease;
@@ -269,35 +219,25 @@ body.invitation-locked {
 
 .welcome-inner {
   position: relative;
-
   z-index: 6;
-
   display: flex;
   flex-direction: column;
   align-items: center;
-
   padding: 30px;
 }
 
 .welcome-names {
   margin-top: -10px;
-
   color: var(--white);
-
   font-family: "Cormorant Garamond", serif;
   font-size: 2rem;
-
-  text-shadow:
-    0 1px 2px rgba(176, 141, 87, 0.7);
+  text-shadow: 0 1px 2px rgba(176, 141, 87, 0.7);
 }
 
 .welcome-subtitle {
   margin-top: 8px;
-
   color: var(--gold);
-
   font-size: 0.65rem;
-
   letter-spacing: 5px;
   text-transform: uppercase;
 }
@@ -305,31 +245,21 @@ body.invitation-locked {
 
 /* ===================================
    OPEN INVITATION BUTTON
-   WHITE BACKGROUND + GOLD TEXT
 =================================== */
 
 .open-button {
   width: auto;
-
   margin-top: 38px;
   padding: 16px 38px;
-
   background: #ffffff;
-
   border: 1px solid var(--gold);
-
   color: var(--gold);
-
   font-family: "Montserrat", sans-serif;
-
   font-size: 0.7rem;
   letter-spacing: 3px;
   text-transform: uppercase;
-
   text-shadow: none;
-
   cursor: pointer;
-
   transition: 0.3s ease;
 }
 
@@ -346,37 +276,27 @@ body.invitation-locked {
 
 .verse-section {
   position: relative;
-
   min-height: 80vh;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   padding: 90px 25px;
-
   overflow: hidden;
   isolation: isolate;
-
   background: var(--cream);
   color: var(--gold);
-
   text-align: center;
 }
 
 .bismillah {
   margin-bottom: 25px;
-
   color: var(--gold);
-
   direction: rtl;
-
   font-family:
     "Geeza Pro",
     "Traditional Arabic",
     serif;
-
   font-size: clamp(2rem, 5vw, 3rem);
   line-height: 1.8;
 }
@@ -384,24 +304,19 @@ body.invitation-locked {
 .verse-divider {
   width: 60px;
   height: 1px;
-
   margin: 10px 0 40px;
-
   background: var(--gold);
 }
 
 .single-verse {
   width: 100%;
   max-width: 850px;
-
   margin: 0 auto;
 }
 
 .verse-reference {
   margin-bottom: 30px;
-
   color: var(--gold);
-
   font-size: 0.75rem;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -409,31 +324,22 @@ body.invitation-locked {
 
 .arabic-verse {
   max-width: 800px;
-
   margin: 0 auto 35px;
-
   color: var(--gold);
-
   direction: rtl;
-
   font-family:
     "Geeza Pro",
     "Traditional Arabic",
     serif;
-
   font-size: clamp(1.8rem, 4vw, 2.6rem);
   line-height: 2;
 }
 
 .verse-translation {
   max-width: 750px;
-
   margin: 0 auto;
-
   color: var(--gold);
-
   font-family: "Cormorant Garamond", serif;
-
   font-size: 1.35rem;
   font-style: italic;
   line-height: 1.7;
@@ -442,28 +348,19 @@ body.invitation-locked {
 
 /* ===================================
    WHITE ROSE FLORAL BACKGROUND
-   QURAN + RSVP SECTIONS
 =================================== */
 
 .verse-section::before,
 .rsvp-section::before {
   content: "";
-
   position: absolute;
-
   inset: 0;
-
   z-index: 0;
-
-  background-image:
-    url("floral-art.png");
-
+  background-image: url("floral-art.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-
   opacity: 0.8;
-
   pointer-events: none;
 }
 
@@ -480,37 +377,27 @@ body.invitation-locked {
 
 .dress-code-section {
   position: relative;
-
   min-height: 55vh;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   padding: 70px 25px;
-
   color: var(--gold);
-
   text-align: center;
 }
 
 .dress-code-section h2 {
   margin-top: 15px;
-
   color: var(--gold);
-
   font-family: "Cormorant Garamond", serif;
-
   font-size: clamp(3rem, 8vw, 5rem);
   font-weight: 400;
 }
 
 .dress-code-section p:last-child {
   color: var(--gold);
-
   font-family: "Cormorant Garamond", serif;
-
   font-size: 1.25rem;
   line-height: 1.6;
 }
@@ -522,9 +409,7 @@ body.invitation-locked {
 
 .section-small {
   margin-bottom: 15px;
-
   color: var(--gold);
-
   font-size: 0.7rem;
   letter-spacing: 4px;
   text-transform: uppercase;
@@ -537,53 +422,40 @@ body.invitation-locked {
 
 .rsvp-section {
   position: relative;
-
   min-height: 100vh;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   padding: 90px 20px;
-
   overflow: hidden;
   isolation: isolate;
-
   background: var(--cream);
-
   color: var(--gold);
-
   text-align: center;
 }
 
 .rsvp-section h2 {
   margin-bottom: 40px;
-
   color: var(--gold);
-
   font-family: "Cormorant Garamond", serif;
-
   font-size: clamp(2.5rem, 7vw, 4rem);
   font-weight: 400;
 }
 
 
 /* ===================================
-   RSVP COUNTDOWN
+   EVENT COUNTDOWN
 =================================== */
 
 .countdown-wrapper {
   margin-bottom: 35px;
-
   text-align: center;
 }
 
 .countdown-label {
   margin-bottom: 20px;
-
   color: var(--gold);
-
   font-size: 0.7rem;
   letter-spacing: 3px;
   text-transform: uppercase;
@@ -591,39 +463,29 @@ body.invitation-locked {
 
 .countdown {
   display: flex;
-
   justify-content: center;
-
   gap: 18px;
   flex-wrap: wrap;
 }
 
 .countdown-box {
   min-width: 85px;
-
   padding: 18px 12px;
-
   background: rgba(247, 243, 233, 0.82);
-
   border: 1px solid var(--gold);
 }
 
 .countdown-box span {
   display: block;
-
   color: var(--gold);
-
   font-family: "Cormorant Garamond", serif;
   font-size: 2.4rem;
 }
 
 .countdown-box small {
   display: block;
-
   margin-top: 5px;
-
   color: var(--gold-dark);
-
   font-size: 0.6rem;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -631,9 +493,7 @@ body.invitation-locked {
 
 .deadline-message {
   margin-top: 20px;
-
   color: var(--gold);
-
   font-family: "Cormorant Garamond", serif;
   font-size: 1.2rem;
 }
@@ -646,23 +506,32 @@ body.invitation-locked {
 .age-notice {
   width: 100%;
   max-width: 500px;
-
   margin-bottom: 30px;
   padding: 20px 25px;
-
   border-top: 1px solid var(--gold);
   border-bottom: 1px solid var(--gold);
-
   color: var(--gold-dark);
-
   font-family: "Cormorant Garamond", serif;
-
   font-size: 1.15rem;
   line-height: 1.6;
 }
 
 .age-notice p + p {
   margin-top: 6px;
+}
+
+
+/* ===================================
+   NEW RSVP DEADLINE REMINDER
+=================================== */
+
+.rsvp-reminder {
+  margin-bottom: 20px;
+  color: var(--gold-dark);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
 }
 
 
@@ -678,18 +547,12 @@ form {
 input,
 select {
   width: 100%;
-
   padding: 17px;
   margin-bottom: 18px;
-
   background: rgba(247, 243, 233, 0.88);
-
   border: 1px solid var(--gold);
-
   color: var(--gold-dark);
-
   font-family: "Montserrat", sans-serif;
-
   outline: none;
 }
 
@@ -700,38 +563,26 @@ input::placeholder {
 input:focus,
 select:focus {
   border-color: var(--gold-dark);
-
-  box-shadow:
-    0 0 0 1px var(--gold-dark);
+  box-shadow: 0 0 0 1px var(--gold-dark);
 }
 
 
 /* ===================================
    SUBMIT RSVP BUTTON
-   WHITE BACKGROUND + GOLD TEXT
 =================================== */
 
 #submit-rsvp {
   width: 100%;
-
   padding: 17px;
-
   background: #ffffff;
-
   border: 1px solid var(--gold);
-
   color: var(--gold);
-
   font-family: "Montserrat", sans-serif;
-
   font-size: 0.75rem;
   letter-spacing: 3px;
   text-transform: uppercase;
-
   text-shadow: none;
-
   cursor: pointer;
-
   transition: 0.3s ease;
 }
 
@@ -748,11 +599,8 @@ select:focus {
 
 .rsvp-status {
   min-height: 22px;
-
   margin-top: 15px;
-
   color: var(--gold-dark);
-
   font-size: 0.8rem;
   line-height: 1.5;
 }
@@ -768,17 +616,12 @@ select:focus {
 
 .thank-you-section {
   position: relative;
-
   min-height: 100vh;
-
   color: var(--gold);
-
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   padding: 40px 20px;
-
   text-align: center;
 }
 
@@ -788,22 +631,16 @@ select:focus {
 
 .thank-you-section h2 {
   margin-bottom: 25px;
-
   color: var(--gold);
-
   font-family: "Cormorant Garamond", serif;
-
   font-size: clamp(4rem, 10vw, 7rem);
   font-weight: 400;
 }
 
 #thank-you-message {
   max-width: 550px;
-
   color: var(--gold);
-
   font-family: "Cormorant Garamond", serif;
-
   font-size: 1.4rem;
   line-height: 1.6;
 }
@@ -811,55 +648,37 @@ select:focus {
 .thank-you-divider {
   width: 70px;
   height: 1px;
-
   margin: 35px 0;
-
   background: var(--white);
-
-  box-shadow:
-    0 1px 2px rgba(176, 141, 87, 0.6);
+  box-shadow: 0 1px 2px rgba(176, 141, 87, 0.6);
 }
 
 .names {
   color: var(--white);
-
   font-family: "Cormorant Garamond", serif;
-
   font-size: 2rem;
   font-style: italic;
-
-  text-shadow:
-    0 1px 2px rgba(176, 141, 87, 0.8);
+  text-shadow: 0 1px 2px rgba(176, 141, 87, 0.8);
 }
 
 
 /* ===================================
    ADD TO CALENDAR BUTTON
-   WHITE BACKGROUND + GOLD TEXT
 =================================== */
 
 .calendar-button {
   width: auto;
-
   margin-top: 35px;
   padding: 15px 35px;
-
   background: #ffffff;
-
   border: 1px solid var(--gold);
-
   color: var(--gold);
-
   font-family: "Montserrat", sans-serif;
-
   font-size: 0.7rem;
   letter-spacing: 3px;
   text-transform: uppercase;
-
   text-shadow: none;
-
   cursor: pointer;
-
   transition: 0.3s ease;
 }
 
@@ -882,13 +701,9 @@ select:focus {
 
 .daisy-frame {
   position: absolute;
-
   inset: 22px;
-
   z-index: 5;
-
   border: 1px solid var(--gold);
-
   pointer-events: none;
 }
 
@@ -901,23 +716,17 @@ select:focus {
 
 .daisy-corner {
   position: absolute;
-
   width: 100px;
   height: 100px;
 }
 
 .daisy {
   position: absolute;
-
   font-family: serif;
-
   font-size: 2.4rem;
   line-height: 1;
-
   filter:
-    drop-shadow(
-      0 1px 1px rgba(176, 141, 87, 0.4)
-    );
+    drop-shadow(0 1px 1px rgba(176, 141, 87, 0.4));
 }
 
 .daisy.white {
@@ -937,9 +746,7 @@ select:focus {
 }
 
 
-/* ===================================
-   TOP LEFT FLOWERS
-=================================== */
+/* TOP LEFT */
 
 .daisy-top-left {
   top: -14px;
@@ -962,9 +769,7 @@ select:focus {
 }
 
 
-/* ===================================
-   TOP RIGHT FLOWERS
-=================================== */
+/* TOP RIGHT */
 
 .daisy-top-right {
   top: -14px;
@@ -987,9 +792,7 @@ select:focus {
 }
 
 
-/* ===================================
-   BOTTOM LEFT FLOWERS
-=================================== */
+/* BOTTOM LEFT */
 
 .daisy-bottom-left {
   bottom: -14px;
@@ -1012,9 +815,7 @@ select:focus {
 }
 
 
-/* ===================================
-   BOTTOM RIGHT FLOWERS
-=================================== */
+/* BOTTOM RIGHT */
 
 .daisy-bottom-right {
   bottom: -14px;
@@ -1110,6 +911,10 @@ select:focus {
   .age-notice {
     padding: 18px 15px;
     font-size: 1.05rem;
+  }
+
+  .rsvp-reminder {
+    font-size: 1.25rem;
   }
 
   .countdown {

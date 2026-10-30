@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
   // WEB3FORMS ACCESS KEY
-  const WEB3FORMS_ACCESS_KEY = "6a1b0b86-2653-48fc-9da3-bbb4962cb925";
+  const WEB3FORMS_ACCESS_KEY = "6a1b0b06-2653-48fc-9da3-bbb4962cb925";
 
 
   // =====================================

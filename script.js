@@ -1,6 +1,10 @@
 
 document.addEventListener("DOMContentLoaded", function () {
 
+  // WEB3FORMS ACCESS KEY
+  const WEB3FORMS_ACCESS_KEY = "6a1b0b86-2653-48fc-9da3-bbb4962cb925";
+
+
   // =====================================
   // OPEN INVITATION + MUSIC
   // =====================================
@@ -99,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   // =====================================
-  // SEND RSVP TO EMAIL
+  // SEND RSVP THROUGH WEB3FORMS
   // =====================================
 
   if (
@@ -139,10 +143,9 @@ document.addEventListener("DOMContentLoaded", function () {
       submitButton.textContent = "Sending...";
       rsvpStatus.textContent = "";
 
-      // EVENT: NOVEMBER 11, 2026
-      // TIME: 5 PM - 11 PM
-
       const rsvpData = {
+
+        access_key: WEB3FORMS_ACCESS_KEY,
 
         name: fullName.value.trim(),
 
@@ -162,14 +165,12 @@ document.addEventListener("DOMContentLoaded", function () {
         event_time: "5:00 PM - 11:00 PM",
 
         event_address:
-          "21075 Dulles Town Cir, Sterling, VA 20166",
+          "Aria Banquet Hall, 21075 Dulles Town Cir, Sterling, VA 20166",
 
-        _subject:
+        subject:
           `New Engagement RSVP - ${fullName.value.trim()}`,
 
-        _template: "table",
-
-        _replyto: guestEmail.value.trim()
+        from_name: "Hena & Abdullah RSVP"
 
       };
 
@@ -177,7 +178,7 @@ document.addEventListener("DOMContentLoaded", function () {
       try {
 
         const response = await fetch(
-          "https://formsubmit.co/ajax/henaabdullahrsvp@gmail.com",
+          "https://api.web3forms.com/submit",
           {
             method: "POST",
 
@@ -190,17 +191,14 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         );
 
-        if (!response.ok) {
-          throw new Error("RSVP could not be sent.");
-        }
-
         const result = await response.json();
 
-        if (
-          result.success === false ||
-          result.success === "false"
-        ) {
-          throw new Error("RSVP service did not accept the submission.");
+        if (!response.ok || result.success !== true) {
+          throw new Error(
+            result.message ||
+            (result.body && result.body.message) ||
+            "RSVP service did not accept the submission."
+          );
         }
 
         const name = fullName.value.trim();
@@ -234,7 +232,7 @@ document.addEventListener("DOMContentLoaded", function () {
         console.error(error);
 
         rsvpStatus.textContent =
-          "Your RSVP could not be sent. Please try again.";
+          "Your RSVP could not be sent. Please try again, or email your name and guest count to henaabdullahrsvp@gmail.com.";
 
       } finally {
 
@@ -268,7 +266,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const deadlineMessage =
     document.getElementById("deadline-message");
 
-  // 5 PM Eastern Time on November 11, 2026
   const eventStart =
     new Date("2026-11-11T17:00:00-05:00").getTime();
 
@@ -373,7 +370,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         "SUMMARY:Hena & Abdullah's Engagement Party",
 
-        "LOCATION:21075 Dulles Town Cir\\, Sterling\\, VA 20166",
+        "LOCATION:Aria Banquet Hall\\, 21075 Dulles Town Cir\\, Sterling\\, VA 20166",
 
         "DESCRIPTION:Join us in celebrating the engagement of Hena & Abdullah.",
 
